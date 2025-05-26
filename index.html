@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chirag | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',        //blue colour
+            accent: '#1a1a2e',         // Dark navy colour
+            neon: '#38bdf8',           // Sky neon colour
+            lightText: '#e2e8f0',      // Light gray text colour
+            bgGradientStart: '#0f172a',
+            bgGradientEnd: '#1f2937',
+          },
+          fontFamily: {
+            sans: ['Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-primary text-lightText font-sans">
+
+  <!-- Header>
+ <!-- Header with Photo as Logo -->
+<header class="bg-accent p-4 flex justify-between items-center shadow-md">
+  <!-- Logo with Image -->
+  <div class="flex items-center space-x-3">
+    <img 
+      src="images/log2.webp" 
+      alt="Chirag Logo" 
+      class="w-10 h-10 rounded-full border-2 border-neon shadow-sm"
+    />
+    <h1 class="text-xl font-bold text-white">Chirag</h1>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+   <ul class="flex gap-6 text-gray-300">
+  <li><a href="index.html" class="hover:text-white">Home</a></li>
+  <li><a href="about.html" class="hover:text-white">About</a></li>
+  <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+  <li><a href="resume.html" class="hover:text-white">Resume</a></li>
+  <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="py-20 px-4 text-center bg-gradient-to-b from-bgGradientStart to-bgGradientEnd">
+    <!-- Image -->
+  <div class="w-44 h-44 mx-auto mb-6 relative">
+  <img 
+  src="images/profile.jpg" 
+  alt="Chirag" 
+  class="w-full h-full object-cover rounded-full border-4 border-neon shadow-xl hover:scale-105 transition-transform duration-300"/>
+      <span class="absolute inset-0 rounded-full ring-2 ring-white/10 animate-pulse"></span>
+    </div>
+
+    <!-- Name -->
+    <h2 class="text-5xl font-extrabold text-white mb-3">
+      Hi, I'm <span class="text-neon">Chirag</span>
+    </h2>
+
+    <!-- Tagline -->
+    <p class="text-lg text-gray-300 mb-4 font-medium max-w-2xl mx-auto leading-relaxed">
+      Web developer creating responsive UIs with HTML, CSS, JS, React & PHP — backed by a growing foundation in C++ for logic and problem-solving
+    </p>
+
+    <p class="text-sm text-gray-400 mb-6 italic">
+      Exploring full-stack development & solving real-world challenges.
+    </p>
+
+    <!-- CTA -->
+   <a href="projects.html" class="bg-green-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-green-500 transition">
+  Explore My Projects
+</a>
+
+
+    <!-- Social -->
+  <!-- Social Links -->
+<div class="flex justify-center mt-10 gap-6">
+ 
+  
+  <!-- GitHub -->
+  <div class="flex justify-center mt-10 gap-6">
+  <a href="https://github.com/chirag56709" target="_blank"
+     class="flex items-center gap-2 px-4 py-2 rounded-full bg-green-600 text-white hover:bg-green-500 transition group shadow-md">
+    <i data-feather="github" class="w-5 h-5 group-hover:text-white"></i>
+    <span class="group-hover:text-white font-medium">GitHub</span>
+  </a>
+  <!-- LinkedIn -->
+  <a href="http://www.linkedin.com/in/chirag-joshi77" target="_blank"
+     class="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white hover:bg-blue-600 transition group shadow-md">
+    <i data-feather="linkedin" class="w-5 h-5 group-hover:text-white"></i>
+    <span class="group-hover:text-white font-medium">LinkedIn</span>
+  </a>
+
+</div>
+
+
+ <script src="https://unpkg.com/feather-icons"></script>
+<script>feather.replace()</script>
+
+
+</body>
+</html>
